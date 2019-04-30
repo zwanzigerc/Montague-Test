@@ -1,11 +1,13 @@
 {-# OPTIONS --without-K #-}
 {-# OPTIONS --no-flat-split #-}
 
-{- This file is a demonstation of how to apply Agda-flat to natural language, in particular as a framework for computational Montague semantics. It provides logical forms in Agda-flat for the Montague Test sentence suite (Morrill and Valentin 2016).
+{- This file is a demonstation of how to apply Agda-flat to natural language, in particular as a framework for computational
+Montague semantics. It provides logical forms in Agda-flat for the Montague Test sentence suite (Morrill and Valentin 2016).
 
 This is a companion file to the submitted paper
 
-Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." 16th Meeting on the Mathematics of Language. Toronto. -}
+Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." 16th Meeting on the 
+Mathematics of Language. Toronto. -}
 
 module MontagueTest where
 
@@ -14,7 +16,8 @@ module MontagueTest where
 open import lib.Basics
 open import lib.types.Sigma
 
-{- (As usual for Agda-flat) we define the comonadic modal type operator ♭ as an inductive type. Here, the constructor is called int to highlight the connection to Montague's intension operator. -}
+{- (As usual for Agda-flat) we define the comonadic modal type operator ♭ as an inductive type. Here, the constructor is 
+called int to highlight the connection to Montague's intension operator. -}
 
 data ♭ {l :{♭} ULevel} (A :{♭} Type l) : Type l where
   int : (a :{♭} A) → ♭ A
