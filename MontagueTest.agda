@@ -1,17 +1,20 @@
 {-# OPTIONS --without-K #-}
 {-# OPTIONS --no-flat-split #-}
 
-{- This file is a demonstation of how to apply Agda-flat to natural language, in particular as a framework for computational
-Montague semantics. It provides logical forms in Agda-flat for the Montague Test sentence suite (Morrill and Valentín 2016).
+{- This file is a demonstration of how to apply Agda-flat (https://github.com/agda/agda/tree/flat) to natural language, in 
+particular as a framework for computational Montague semantics. It provides logical forms in Agda-flat for the Montague Test 
+sentence suite (Morrill and Valentín 2016).
 
 This is a companion file to the accepted paper
 
-Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." 16th Meeting on the 
-Mathematics of Language. Toronto. -}
+Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." Proceedings of the 16th 
+Meeting on the Mathematics of Language. July 18-19, 2019. Toronto. -}
 
 module MontagueTest where
 
-{- We import basic definitions of the HoTT-Agda library. -}
+{- I. Preliminary Definitions -}
+
+{- We import basic definitions of the HoTT-Agda library (https://github.com/HoTT/HoTT-Agda). -}
 
 open import lib.Basics
 open import lib.types.Sigma
@@ -22,18 +25,24 @@ called int to highlight the connection to Montague's intension operator. -}
 data ♭ {l :{♭} ULevel} (A :{♭} Type l) : Type l where
   int : (a :{♭} A) → ♭ A
 
-{- We define let-substitution, AKA ♭ elim. -}
+{- We define let-substitution, AKA ♭-Elim. This will be used to give logical forms for *de re* modal sentences. -}
 
-letin : {c : ULevel}{l :{♭} ULevel}{A :{♭} Type l}{C : ♭ A → Type c}
+letin : {m : ULevel}{l :{♭} ULevel}{A :{♭} Type l}{C : ♭ A → Type m}
          → (x : ♭ A)
          → ((u :{♭} A) → C (int u))
          → C x
 letin {A = A} {C = C} (int u) f = f u
 
+{- We think of "letin s t" as "let (int u) := s in t". -}
+
 {- We define (what is here called) ext, the extension operator, which can be thought of as a simply-typed eliminator for ♭. -}
 
 ext : {l :{♭} ULevel} {A :{♭} Type l} → (♭ A → A)
 ext {A = A} (int u) = u
+
+{- II. The Montague Test -}
+
+{- A. Lexicon -}
 
 {- We introduce a lexicon (that is, various constants) for use in our translations. -}
 
@@ -46,7 +55,7 @@ postulate
   slowly try : ♭ (♭ E → Type0) → ♭ E → Type0
   In : ♭ (♭ (♭ E → Type0) → Type0) → ♭ (♭ E → Type0) → ♭ E → Type0 
 
-{- Montague Test Sentences -}
+{- B. Montague Test Sentences -}
 
 {- John walks. -}
 
