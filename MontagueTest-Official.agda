@@ -10,7 +10,7 @@ This is a companion file to the accepted paper
 Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." Proceedings of the 16th 
 Meeting on the Mathematics of Language. July 18-19, 2019. Toronto. -}
 
-module MontagueTestOfficial where
+module MontagueTest-Official where
 
 {- We import basic definitions of the HoTT-Agda library (https://github.com/HoTT/HoTT-Agda). -}
 
