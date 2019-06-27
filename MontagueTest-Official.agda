@@ -1,8 +1,8 @@
 {-# OPTIONS --without-K #-}
 {-# OPTIONS --no-flat-split #-}
 
-{- This file formalizes in Agda-flat the logical forms for the Montague Test sentence suite (Morrill and Valentín 2016) given
-in the paper
+{- This file formalizes in Agda-flat the logical forms for the Montague Test sentence suite (Morrill and Valentín 2016) 
+given in the paper
 
 Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." Proceedings of the 16th 
 Meeting on the Mathematics of Language. July 18-19, 2019. Toronto. -}
