@@ -1,9 +1,9 @@
 {-# OPTIONS --without-K #-}
 {-# OPTIONS --no-flat-split #-}
 
-{- This file formalizes logical forms for the Montague Test sentences. These are simpler versions of those given in the paper
-Zwanziger (2019). The difference is that, here, natural language propositions are interpreted as types that are not necessarily
-propositions in the sense of homotopy type theory. -}
+{- This file formalizes in Agda-flat logical forms for the Montague Test sentence suite (Morrill and Valentín 2016). These are
+simpler versions of those given in the paper Zwanziger (2019). The difference is that, here, natural language propositions are
+interpreted as types that are not necessarily propositions in the sense of homotopy type theory. -}
 
 module MontagueTest-Simple where
 
