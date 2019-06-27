@@ -1,8 +1,8 @@
 # Montague-Test
 
-This repository is a demonstration of how to apply the proof assistant Agda-flat (https://github.com/agda/agda/tree/flat) to 
-natural language, in particular as a framework for computational Montague semantics. It provides logical forms in Agda-flat 
-for the Montague Test sentence suite (Morrill and Valentín 2016).
+This repository is a demonstration of how to apply the proof assistant Agda-flat (https://github.com/agda/agda/tree/flat) 
+to natural language, in particular as a framework for computational Montague semantics. It provides logical forms in 
+Agda-flat for the Montague Test sentence suite (Morrill and Valentín 2016).
 
 It is a companion repository to the accepted paper
 
@@ -11,9 +11,8 @@ Meeting on the Mathematics of Language. July 18-19, 2019. Toronto.
 
 The file Flat.agda formalizes enough of the theory of the comonadic operator ♭ for the purposes of the Montague Test.
 
-The file MontagueTest-Simple.agda gives logical forms for the Montague Test sentences. These are simpler versions of those 
-given in the paper. The difference is that, here, natural language propositions are interpreted as types that are not 
-necessarily propositions in the sense of homotopy type theory.
+The file MontagueTest-Simple.agda gives logical forms for the Montague Test sentences. These are simpler and more readable versions of those given in the paper. The difference is that, here, natural language propositions are interpreted as types 
+that are not necessarily propositions in the sense of homotopy type theory.
 
 The file Logic.agda formalizes enough of "logic in homotopy type theory" to instead interpret natural language propositions
 as propositions in the sense of homotopy type theory.
