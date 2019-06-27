@@ -1,14 +1,9 @@
 {-# OPTIONS --without-K #-}
 {-# OPTIONS --no-flat-split #-}
 
-{- This file is a demonstration of how to apply Agda-flat (https://github.com/agda/agda/tree/flat) to natural language, in 
-particular as a framework for computational Montague semantics. It provides logical forms in Agda-flat for the Montague Test 
-sentence suite (Morrill and Valentín 2016).
-
-This is a companion file to the accepted paper
-
-Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." Proceedings of the 16th 
-Meeting on the Mathematics of Language. July 18-19, 2019. Toronto. -}
+{- This file formalizes logical forms for the Montague Test sentences. These are simpler versions of those given in the paper
+Zwanziger (2019). The difference is that, here, natural language propositions are interpreted as types that are not necessarily
+propositions in the sense of homotopy type theory. -}
 
 module MontagueTest-Simple where
 
