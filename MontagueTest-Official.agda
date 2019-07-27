@@ -6,7 +6,7 @@ given in the paper
 
 Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." In Proceedings of the 16th
 Meeting on the Mathematics of Language. Philippe de Groote, Frank Drewes, and Gerald Penn, eds.
-https://www.aclweb.org/anthology/papers/W/W19/W19-5704/. Association for Computational Linguistics. -}
+https://www.aclweb.org/anthology/papers/W/W19/W19-5704/. Association for Computational Linguistics Anthology. -}
 
 module MontagueTest-Official where
 
