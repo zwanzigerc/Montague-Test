@@ -4,10 +4,10 @@ This repository is a demonstration of how to apply the proof assistant Agda-flat
 to natural language, in particular as a framework for computational Montague semantics. It provides logical forms in 
 Agda-flat for the Montague Test sentence suite (Morrill and Valentín 2016).
 
-It is a companion repository to the forthcoming paper
+It is a companion repository to the paper
 
-Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." Proceedings of the 16th 
-Meeting on the Mathematics of Language. July 18-19, 2019. Toronto.
+Zwanziger, Colin. (2019). "Dependently-Typed Montague Semantics in the Proof Assistant Agda-flat." In Proceedings of the 16th 
+Meeting on the Mathematics of Language. Philippe de Groote, Frank Drewes, and Gerald Penn, eds. https://www.aclweb.org/anthology/papers/W/W19/W19-5704/. Association for Computational Linguistics.
 
 The file Flat.agda formalizes enough of the theory of the comonadic operator ♭ for the purposes of the Montague Test.
 
